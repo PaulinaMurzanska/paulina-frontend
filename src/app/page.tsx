@@ -1,4 +1,15 @@
-import { Navigation, Hero, About, Timeline, Skills, Projects, Contact, MyFocus } from "@/components";
+import {
+  Navigation,
+  Hero,
+  Services,
+  ImpactStories,
+  AIWorkflow,
+  Experience,
+  Skills,
+  About,
+  Contact,
+  Footer,
+} from "@/components";
 
 export default function Home() {
   return (
@@ -6,16 +17,15 @@ export default function Home() {
       <Navigation />
       <main>
         <Hero />
-        <MyFocus />
-        <About />
-        <Timeline />
+        <Services />
+        <ImpactStories />
+        <AIWorkflow />
+        <Experience />
         <Skills />
-        <Projects />
+        <About />
         <Contact />
       </main>
-      <footer className="py-8 text-center text-[var(--text-muted)] text-sm">
-        <p>{new Date().getFullYear()} · Crafted with Next.js & Framer Motion</p>
-      </footer>
+      <Footer />
     </>
   );
 }

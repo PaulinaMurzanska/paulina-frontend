@@ -26,7 +26,7 @@ export default function ProjectPage() {
   const searchParams = useSearchParams();
   const slug = params.slug as string;
   const project = getProjectById(slug);
-  const fromSection = searchParams.get("from") || "projects";
+  const fromSection = searchParams.get("from") || "experience";
 
   if (!project) {
     notFound();
@@ -43,7 +43,7 @@ export default function ProjectPage() {
 
       <section className="py-20 bg-[var(--bg-primary)]">
         <div className="max-w-5xl mx-auto px-6 md:px-12">
-          <ProjectOverview project={project} color={color} />
+          <ProjectOverview project={project} color={color} gradient={gradient} />
 
           {project.challenge && project.solution && project.impact && (
             <CaseStudyCards
@@ -75,9 +75,10 @@ export default function ProjectPage() {
 interface ProjectOverviewProps {
   project: ProjectItem;
   color: string;
+  gradient: string;
 }
 
-function ProjectOverview({ project, color }: ProjectOverviewProps) {
+function ProjectOverview({ project, color, gradient }: ProjectOverviewProps) {
   return (
     <motion.div
       className="mb-16"
@@ -85,6 +86,12 @@ function ProjectOverview({ project, color }: ProjectOverviewProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
     >
+      {project.impactStory && (
+        <div className="mb-10 rounded-3xl p-6 md:p-8 text-white shadow-lg" style={{ background: gradient }}>
+          <p className="text-xs uppercase tracking-widest text-white/70 mb-2">Impact</p>
+          <p className="text-2xl md:text-3xl font-bold leading-tight">{project.impactStory.headline}</p>
+        </div>
+      )}
       <div className="flex items-center gap-4 mb-6">
         {project.projectLogo && (
           <div
@@ -103,6 +110,19 @@ function ProjectOverview({ project, color }: ProjectOverviewProps) {
       <p className="text-lg text-[var(--text-secondary)] leading-relaxed">
         {project.longDescription}
       </p>
+      {project.highlights && project.highlights.length > 0 && (
+        <div className="mt-8 bg-white rounded-3xl p-6 md:p-8 shadow-lg">
+          <h3 className="text-xl font-bold mb-4">Key achievements</h3>
+          <ul className="space-y-3">
+            {project.highlights.map((highlight) => (
+              <li key={highlight} className="flex gap-3 text-[var(--text-primary)] leading-relaxed">
+                <span className="mt-2 w-2 h-2 rounded-full flex-shrink-0" style={{ background: color }} aria-hidden="true" />
+                <span>{highlight}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </motion.div>
   );
 }

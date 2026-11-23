@@ -103,9 +103,11 @@ function HeroContent({ project }: { project: ProjectItem }) {
         <span className="px-4 py-1 bg-white/20 backdrop-blur-sm rounded-full text-sm">
           {formatDateRange(project.startDate, project.endDate)}
         </span>
-        <span className="px-4 py-1 bg-white/20 backdrop-blur-sm rounded-full text-sm">
-          {project.location}
-        </span>
+        {project.location ? (
+          <span className="px-4 py-1 bg-white/20 backdrop-blur-sm rounded-full text-sm">
+            {project.location}
+          </span>
+        ) : null}
         {project.isPersonal && (
           <span className="px-4 py-1 bg-gradient-to-r from-[#7c3aed] to-[#db2777] rounded-full text-sm font-semibold">
             Personal Project

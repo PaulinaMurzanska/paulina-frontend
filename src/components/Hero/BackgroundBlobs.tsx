@@ -2,28 +2,23 @@
 
 import { motion } from "framer-motion";
 
-// Animation configurations for the background blobs
 const BLOB_CONFIG = [
   {
-    className: "absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-[var(--accent-1)] opacity-50 blur-3xl",
-    animate: { x: [0, 50, 0], scale: [1, 1.1, 1] },
-    duration: 15,
-  },
-  {
-    className: "absolute top-1/2 -left-40 w-[500px] h-[500px] rounded-full bg-[var(--accent-2)] opacity-50 blur-3xl",
-    animate: { x: [0, -30, 0], scale: [1, 1.15, 1] },
+    className: "absolute -top-48 -right-32 w-[560px] h-[560px] rounded-full bg-[var(--accent-1)] opacity-40 blur-3xl",
+    animate: { x: [0, 40, 0], scale: [1, 1.08, 1] },
     duration: 18,
   },
   {
-    className: "absolute -bottom-20 right-1/3 w-[400px] h-[400px] rounded-full bg-[var(--accent-3)] opacity-40 blur-3xl",
-    animate: { x: [0, 40, 0] },
-    duration: 12,
+    className: "absolute top-1/2 -left-48 w-[460px] h-[460px] rounded-full bg-[var(--accent-2)] opacity-35 blur-3xl",
+    animate: { x: [0, -24, 0], scale: [1, 1.1, 1] },
+    duration: 22,
   },
 ];
 
 export function BackgroundBlobs() {
   return (
-    <div className="absolute inset-0 overflow-hidden">
+    <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+      <div className="absolute inset-0 dot-grid" />
       {BLOB_CONFIG.map((blob, index) => (
         <motion.div
           key={index}

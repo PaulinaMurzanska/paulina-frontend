@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ReactNode } from "react";
 import { SectionBadge } from "./SectionBadge";
 
 type AccentColor = "accent-1" | "accent-2" | "accent-3" | "accent-4";

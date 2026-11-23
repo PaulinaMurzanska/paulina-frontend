@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "pdf": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome --headless --disable-gpu --no-margins --print-to-pdf=public/paulina-murzanska-cv.pdf resume/paulina-murzanska-cv.html"
+    "pdf": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome --headless --disable-gpu --no-pdf-header-footer --print-to-pdf=public/paulina-murzanska-cv.pdf resume/paulina-murzanska-cv.html"
   },
   "dependencies": {
     "framer-motion": "^12.26.2",

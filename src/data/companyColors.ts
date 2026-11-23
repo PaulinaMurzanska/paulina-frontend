@@ -10,8 +10,9 @@ export const companyColors: Record<string, CompanyColorScheme> = {
   Octopus: { color: "#1AB7FC", gradient: "linear-gradient(135deg, #1AB7FC 0%, #4dc9ff 100%)" },
   IQAir: { color: "#d32f2f", gradient: "linear-gradient(135deg, #d32f2f 0%, #ef5350 100%)" },
   Proprio: { color: "#6b5b95", gradient: "linear-gradient(135deg, #6b5b95 0%, #8b7bb5 100%)" },
+  Pelagos: { color: "#0c4474", gradient: "linear-gradient(135deg, #0d2857 0%, #0c4474 48%, #0197d2 100%)" },
   BeautyLash: { color: "#d4af37", gradient: "linear-gradient(135deg, #1a1a1a 0%, #d4af37 100%)" },
-  "AS Service": { color: "#c62828", gradient: "linear-gradient(135deg, #1a1a1a 0%, #c62828 100%)" },
+  "AS Serwis": { color: "#c62828", gradient: "linear-gradient(135deg, #1a1a1a 0%, #c62828 100%)" },
   "Personal Project": { color: "#7c3aed", gradient: "linear-gradient(135deg, #7c3aed 0%, #db2777 100%)" },
 };
 

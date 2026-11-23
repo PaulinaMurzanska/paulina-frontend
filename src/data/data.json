@@ -1,21 +1,335 @@
 {
+  "profile": {
+    "name": "Paulina Murzanska",
+    "nativeName": "Paulina Murzańska",
+    "role": "React Front-end Developer",
+    "headline": "React Front-end Developer · AI-augmented development",
+    "summary": "React front-end developer with 4+ years of commercial experience in React, Next.js, TypeScript and Vue. Every project needs something different, so I adapt fast, spot the gaps nobody owns and fill them: an integrated documentation app that replaced scattered SharePoint files, a proper SPA architecture for a struggling Vue app, a self-service test runner for non-technical users, and a rescue of an AI-generated app that didn't work. I work AI-augmented, with agents assisting me from Jira ticket to docs and my review on every change.",
+    "careerStart": "2022-03",
+    "location": "Kraków, Poland",
+    "workModes": "Remote · Hybrid · On-site in Kraków",
+    "employment": "Full-time · Part-time · B2B contract",
+    "availability": "Open to new roles",
+    "languages": ["English (C1, fluent)", "Polish (native)"],
+    "email": "p.murzanska@gmail.com",
+    "phone": "+48 514 132 314",
+    "phoneHref": "tel:+48514132314",
+    "website": "https://paulina-frontend.vercel.app",
+    "github": "https://github.com/PaulinaMurzanska",
+    "linkedin": "https://www.linkedin.com/in/paulina-murza%C5%84ska-858b6544/",
+    "cv": "/paulina-murzanska-cv.pdf",
+    "heroKeywords": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Vue.js",
+      "Front-end architecture",
+      "AI-augmented development",
+      "Shopify / e-commerce",
+      "Testing & Playwright"
+    ],
+    "whyMe": [
+      { "claim": "Adapts fast", "proof": "Vue, Shopify, NetSuite: productive in days" },
+      { "claim": "Fills the gaps", "proof": "Missing docs or tooling? I build them" },
+      { "claim": "Knows the tech", "proof": "4+ years of React, Next.js, TypeScript, Vue" },
+      { "claim": "Works with AI", "proof": "Agents do the legwork, I review every change" },
+      { "claim": "Listens & communicates", "proof": "2× Lead Front-end · 12+ years leading teams" }
+    ],
+    "targetRoles": [
+      "Front-end Developer",
+      "React Developer",
+      "Next.js Developer",
+      "Vue.js Developer",
+      "Lead Front-end Developer",
+      "E-commerce Front-end Developer (Shopify)",
+      "AI-augmented Software Engineer"
+    ]
+  },
+  "services": [
+    {
+      "id": "build",
+      "icon": "code",
+      "title": "Build front-end features",
+      "description": "Production UI in React, Next.js, TypeScript and Vue: components, routing, state management, API integration, performance and SEO. Shipped for e-commerce, ERP, education and insurance products.",
+      "keywords": ["React", "Next.js", "TypeScript", "Vue.js", "Remix", "Tailwind CSS"]
+    },
+    {
+      "id": "architect",
+      "icon": "layers",
+      "title": "Fix and structure what's broken",
+      "description": "I step into apps that grew the wrong way, whether a Vue app built as one page or an AI-generated app built by a non-technical client, and give them a working architecture: proper SPA structure, routing and clean component patterns.",
+      "keywords": ["Front-end architecture", "SPA routing", "Refactoring", "Code reviews", "Technical leadership"]
+    },
+    {
+      "id": "gaps",
+      "icon": "target",
+      "title": "Fill the gaps nobody owns",
+      "description": "If something slows the team down, I build the fix. Scattered SharePoint documents became an integrated documentation app. A terminal-only test suite became a web app that non-technical users run themselves.",
+      "keywords": ["Internal tools", "Documentation apps", "Jenkins API", "Automation", "Analytical thinking"]
+    },
+    {
+      "id": "quality",
+      "icon": "shield",
+      "title": "Ship with quality built in",
+      "description": "QA experience means I test like a user and fix like a developer: Playwright and Selenium end-to-end tests, Jest and React Testing Library, plus clean Jira tickets and pull requests.",
+      "keywords": ["Playwright", "Selenium", "Jest", "React Testing Library", "Jira"]
+    }
+  ],
+  "aiWorkflow": {
+    "title": "AI-augmented development",
+    "standard": {
+      "headline": "Since 2026, working with AI has been the new standard.",
+      "text": "The way software gets built has changed. AI agents are now part of everyday development, and developers who don't use them are falling behind. I adapted quickly and rebuilt my day-to-day work around this new way of working. It's not a shortcut: it lets me deliver more, faster, to the same quality bar."
+    },
+    "intro": "Writing code is no longer the slow part. The slow parts are deciding what to build, checking that it's right, and shipping it safely. So I lead every step and use agents as my assistant across the whole delivery cycle: I set the direction, review every change and own what ships. I also know what AI gets wrong. I've rescued an app that AI had written badly, because I understood the frameworks underneath.",
+    "steps": [
+      {
+        "id": "ticket",
+        "title": "Ticket",
+        "icon": "trello",
+        "me": "I define the scope and acceptance criteria.",
+        "agent": "Creates and updates the Jira ticket through API / MCP integrations, with no manual clicking or CLI work."
+      },
+      {
+        "id": "analyse",
+        "title": "Analyse",
+        "icon": "search",
+        "me": "I decide what to investigate and verify the findings.",
+        "agent": "Reads the ticket, explores the codebase, and checks logs and failing jobs to find the root cause."
+      },
+      {
+        "id": "plan",
+        "title": "Plan & branch",
+        "icon": "branch",
+        "me": "I choose the direction and the trade-offs.",
+        "agent": "Lays out the options, then creates the branch for the agreed approach."
+      },
+      {
+        "id": "build",
+        "title": "Build",
+        "icon": "terminal",
+        "me": "I steer the implementation and keep the architecture clean.",
+        "agent": "Writes the code to the agreed plan and the project's conventions."
+      },
+      {
+        "id": "test",
+        "title": "Review & test",
+        "icon": "check",
+        "me": "I review every diff and check the result myself before anything moves on.",
+        "agent": "Writes and extends unit and Playwright tests."
+      },
+      {
+        "id": "pr",
+        "title": "Pull request",
+        "icon": "pr",
+        "me": "I sign off, teammates review, and we release.",
+        "agent": "Drafts the PR description and a first-pass code review."
+      },
+      {
+        "id": "docs",
+        "title": "Document",
+        "icon": "file",
+        "me": "I decide what needs documenting, then edit for accuracy and publish.",
+        "agent": "Turns code changes into documentation pages and release notes."
+      }
+    ],
+    "principles": [
+      {
+        "title": "Human in the loop",
+        "description": "The agent is my assistant, not my replacement. Nothing merges until I've read and understood it."
+      },
+      {
+        "title": "Faster, same standards",
+        "description": "Shorter cycles from ticket to release, with tests, reviews and documentation kept in place."
+      },
+      {
+        "title": "Framework knowledge first",
+        "description": "Agents are only as good as the person checking them. Knowing React, Vue and the platform underneath is how I catch what AI gets wrong."
+      }
+    ],
+    "tools": ["Cursor", "AI coding agents", "MCP / API integrations", "Jira", "Confluence", "GitHub", "Azure DevOps", "Playwright"]
+  },
+  "skills": [
+    {
+      "name": "Front-end Development",
+      "icon": "code",
+      "skills": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "JavaScript (ES6+)",
+        "Vue.js",
+        "Remix",
+        "Redux",
+        "HTML5",
+        "REST APIs",
+        "GraphQL",
+        "SPA architecture & routing",
+        "SSR / SSG",
+        "Performance optimization",
+        "SEO"
+      ]
+    },
+    {
+      "name": "AI-augmented Development",
+      "icon": "cpu",
+      "emphasized": true,
+      "skills": [
+        "AI coding agents",
+        "Cursor",
+        "Agent-driven workflows",
+        "Prompt & context engineering",
+        "MCP / API integrations",
+        "AI-assisted code review",
+        "AI-generated documentation",
+        "Fixing AI-generated code"
+      ]
+    },
+    {
+      "name": "Platforms & E-commerce",
+      "icon": "globe",
+      "skills": [
+        "Shopify Hydrogen",
+        "Shopify APIs",
+        "Liquid → React migration",
+        "Headless commerce",
+        "NetSuite",
+        "SuiteScript",
+        "ERP & CRM integrations",
+        "Salesforce"
+      ]
+    },
+    {
+      "name": "UI & Design Systems",
+      "icon": "layers",
+      "skills": [
+        "Tailwind CSS",
+        "MUI",
+        "Storybook",
+        "Component libraries",
+        "CSS Modules",
+        "SCSS",
+        "Styled Components",
+        "Framer Motion",
+        "Responsive design",
+        "Accessibility (WCAG)"
+      ]
+    },
+    {
+      "name": "Testing & Quality",
+      "icon": "shield",
+      "skills": [
+        "Playwright",
+        "Selenium",
+        "End-to-end (E2E) testing",
+        "Jest",
+        "React Testing Library",
+        "Cypress",
+        "Manual & regression testing",
+        "Test automation in CI"
+      ]
+    },
+    {
+      "name": "Delivery & Tooling",
+      "icon": "book",
+      "skills": [
+        "Git",
+        "GitHub",
+        "Azure DevOps",
+        "Bitbucket",
+        "CI/CD",
+        "Jenkins",
+        "Nx",
+        "Vite",
+        "Vercel",
+        "Jira",
+        "Confluence",
+        "Technical documentation",
+        "Agile / Scrum",
+        "Code reviews"
+      ]
+    }
+  ],
   "experienceTimeline": [
+    {
+      "id": "pelagos-insurance-group",
+      "company": "Pelagos",
+      "project": "Reinsurance policy administration platform",
+      "visibility": "internal",
+      "url": null,
+      "location": "",
+      "startDate": "2026-03",
+      "endDate": "present",
+      "role": "React Front-end Developer / QA",
+      "shortDescription": "React front-end development and QA on a reinsurance policy administration platform. I spotted that the project's documentation was scattered across standalone SharePoint files and replaced it with an integrated documentation app that grows with every release.",
+      "impactStory": {
+        "headline": "From scattered SharePoint files to an integrated documentation app",
+        "gap": "The project's documentation lived in standalone SharePoint documents. They were hard to find, quickly out of date and disconnected from the code that actually shipped.",
+        "action": "Nobody asked me to, but I saw the gap and built a wiki-style documentation app with a clean interface. Its pages are generated from code changes with the help of AI agents, so every release extends it.",
+        "result": "Documentation moved up to a professional level. It is current, searchable and tied to releases, which makes the work easier and more efficient for me, the team and the client."
+      },
+      "highlights": [
+        "Replaced standalone SharePoint documents with an integrated, wiki-style documentation app I designed and built. It is generated from code changes with AI agents and grows with every release.",
+        "Build and fix React, Next.js and TypeScript screens on the shared component library.",
+        "Test the platform manually and with Playwright, and fix front-end issues myself instead of handing them off.",
+        "Write, refine and triage Jira tickets, and use AI agents across the delivery cycle with my review on every change."
+      ],
+      "longDescription": "Pelagos is a reinsurance company. On its policy administration platform I work as a React front-end developer with QA responsibilities. Early on I noticed that the project's documentation was a set of standalone SharePoint documents: hard to find, quickly stale and disconnected from the code. I decided it would be more efficient for everyone to have documentation that lives with the product, so I designed and built a wiki-style documentation app with its own interface. Its content is generated from code changes with the help of AI agents, and each release expands it. Alongside that I build and fix React / Next.js screens, test the main journeys manually and with Playwright, and manage tickets in Jira.",
+      "challenge": "Documentation for the platform existed only as standalone SharePoint files. Finding the right page was slow, content went stale with every release, and nothing connected the documents to what had actually shipped.",
+      "solution": "I designed and built an integrated, wiki-style documentation app with a clean interface for the team. Pages are generated from code changes with the help of AI agents, so each release adds its own documentation and release notes. As a developer with QA responsibilities, I also fix the front-end issues I find myself.",
+      "impact": "The team went from scattered files to a documentation app that stays current and grows with the product. It's easier and faster to use for me, for the team and for the client, and it raised project documentation to a professional standard.",
+      "technologies": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "AI agents",
+        "Technical documentation",
+        "Playwright",
+        "Tailwind CSS",
+        "Storybook",
+        "Nx",
+        "Jest",
+        "React Testing Library",
+        "MUI",
+        "ag-grid",
+        "Jira",
+        "Azure DevOps"
+      ],
+      "features": [
+        "Integrated documentation app built from scratch (wiki model)",
+        "Replaced standalone SharePoint documents",
+        "Docs generated from code changes with AI agents",
+        "Documentation that expands with every release",
+        "React / Next.js screens and front-end fixes",
+        "Manual and Playwright testing",
+        "Jira ticket writing and triage"
+      ],
+      "projectImage": "",
+      "projectLogo": "",
+      "isPersonal": false,
+      "showcaseOrder": 0
+    },
     {
       "id": "sofomo-website",
       "company": "Sofomo",
-      "project": "My Employer — Software Consultancy",
+      "project": "Software consultancy (employer)",
       "visibility": "public",
       "url": "https://www.sofomo.com/",
       "location": "Poland / International",
       "startDate": "2022-03",
       "endDate": "present",
       "role": "Front-end Developer",
-      "shortDescription": "Sofomo is my employer — a software consultancy that assigns developers to client projects. I've been with Sofomo since 2022, working on various client engagements including their corporate website.",
-      "longDescription": "Sofomo is a software consultancy company based in Poland that provides development services to international clients. As my employer since March 2022, Sofomo assigns me to various client projects where I work as an embedded team member. During my time with Sofomo, I also contributed to the development and maintenance of the company's corporate website using Next.js and React, delivering responsive, accessible UI components and supporting SEO and performance improvements. The other projects in my timeline (IQAir, Octopus, Proprio, FlexCare, TriplePoint) are client engagements through Sofomo.",
-      "challenge": "Working as a consultancy developer requires quickly adapting to different tech stacks, codebases, and team dynamics while maintaining high delivery standards across diverse client projects.",
-      "solution": "Developed strong adaptability skills, maintained consistent coding standards across projects, and built expertise in multiple frameworks (React, Vue, Next.js, Remix) to effectively contribute to various client engagements.",
-      "impact": "Successfully delivered on multiple client projects across different industries (e-commerce, healthcare, education, ERP) while maintaining long-term employment stability with Sofomo.",
-      "technologies": ["Next.js", "React", "Vue.js", "TypeScript", "Remix", "Tailwind CSS", "CSS Modules", "SEO", "Performance Optimization"],
+      "shortDescription": "My employer since 2022: a software consultancy that embeds developers in international client teams. Through Sofomo I delivered projects for IQAir, Octopus, Proprio, FlexCare and TriplePoint, and contributed to Sofomo's own website.",
+      "highlights": [
+        "Embedded in client teams across e-commerce, healthcare, education and ERP, mostly for US and international clients.",
+        "Picked up a new stack and codebase quickly on each engagement: React, Vue, Next.js, Remix, Shopify Hydrogen, NetSuite and Salesforce.",
+        "Contributed to the company's Next.js corporate website with responsive, accessible components and SEO and performance work."
+      ],
+      "longDescription": "Sofomo is a software consultancy company based in Poland that provides development services to international clients. As my employer since March 2022, Sofomo assigns me to client projects where I work as an embedded team member. I also contributed to the development and maintenance of the company's corporate website using Next.js and React, delivering responsive, accessible UI components and supporting SEO and performance improvements. The client engagements in my timeline (IQAir, Octopus, Proprio, FlexCare, TriplePoint) are through Sofomo.",
+      "challenge": "Working as a consultancy developer means adapting quickly to different tech stacks, codebases and team dynamics while keeping delivery standards high on every client project.",
+      "solution": "I kept consistent coding standards across projects and built hands-on expertise in multiple frameworks (React, Vue, Next.js, Remix) so I could contribute from the first weeks of each engagement.",
+      "impact": "Delivered client projects across several industries (e-commerce, healthcare, education, ERP) while staying with the same employer long term.",
+      "technologies": ["Next.js", "React", "Vue.js", "TypeScript", "Remix", "Tailwind CSS", "CSS Modules", "SEO", "Performance optimization"],
       "features": [
         "Long-term consultancy employment",
         "Multiple client project assignments",
@@ -26,117 +340,163 @@
       "projectImage": "/images/projects/Sofomo.svg",
       "projectLogo": "/images/projects/Sofomo.svg",
       "isPersonal": false,
-      "showcaseOrder": 4
+      "showcaseOrder": 6
     },
     {
       "id": "triplepoint-qa",
       "company": "TriplePoint",
-      "project": "Salesforce QA Automation",
+      "project": "Salesforce test automation",
       "visibility": "internal",
       "url": null,
       "location": "International",
       "startDate": "2023-01",
       "endDate": "2023-08",
-      "role": "QA Engineer",
-      "shortDescription": "Implemented Selenium-based QA automation with Jenkins CI and built a Next.js dashboard for non-technical test execution and reporting.",
-      "longDescription": "Worked on QA automation for an internal Salesforce-based application. Created and maintained Selenium test suites, integrated automated runs with Jenkins, and supported a stable CI workflow. Built a lightweight Next.js interface that allowed non-technical users to trigger test runs and review Jenkins results, improving visibility and reducing manual QA coordination.",
-      "challenge": "Non-technical stakeholders needed visibility and control over automated runs, and QA pipelines had to be stable and reproducible in CI.",
-      "solution": "Implemented automated UI tests (Selenium/Java), configured Jenkins pipelines, and created a Next.js interface connected to Jenkins to run tests and surface outcomes in a simple, user-friendly way.",
-      "impact": "Reduced manual QA coordination and improved transparency of automated test results for a broader group of stakeholders.",
-      "technologies": ["Selenium", "Java", "Jenkins", "Salesforce", "Next.js", "CI/CD", "Test Automation", "QA"],
+      "role": "QA Automation Engineer",
+      "shortDescription": "My first client project. Besides writing the full Selenium test suite, I built a standalone Next.js app connected to the Jenkins API, so non-technical users could choose which features to test, run the tests themselves and read the results.",
+      "impactStory": {
+        "headline": "A self-service test runner for non-technical users",
+        "gap": "The client wanted non-technical people to run automated tests on chosen features, switching areas on and off, without a terminal or developer knowledge.",
+        "action": "I wrote all the Selenium test scenarios in their own repository, automated periodic runs in Jenkins, and built a standalone Next.js / React app on the Jenkins API to select, trigger and present test runs.",
+        "result": "Non-technical users could run exactly the tests they needed and see the results themselves, with no developer in the loop and no manual QA coordination."
+      },
+      "highlights": [
+        "Wrote all Selenium (Java) test scenarios for a Salesforce-based application, kept in an independent repository separate from the application code.",
+        "Automated periodic test runs in Jenkins.",
+        "Built a standalone Next.js / React app connected to the Jenkins API, where non-technical users switch features on or off, trigger runs and read the results."
+      ],
+      "longDescription": "TriplePoint was my first client project. The goal was test automation for an internal Salesforce-based application, with one unusual requirement: non-technical people on the client side had to be able to run the tests for the features they cared about (switching areas on and off) without a terminal or any developer knowledge. I wrote all the Selenium test scenarios, kept them in a standalone repository independent from the application code, and automated periodic runs in Jenkins. Because Jenkins exposes an API, I built a dedicated Next.js / React application on top of it to select features, trigger runs and present results in a simple interface.",
+      "challenge": "The client wanted non-technical users to choose which features to test and run automated tests on demand, without a terminal, without developer knowledge and without waiting for QA.",
+      "solution": "I wrote the complete Selenium test suite in its own repository, scheduled automatic periodic runs in Jenkins, and built a standalone Next.js / React app connected to the Jenkins API so users could switch features on or off, trigger runs and read the results.",
+      "impact": "Testing became self-service. Non-technical users ran exactly what they needed and saw the results immediately, and the team stopped coordinating test runs by hand.",
+      "technologies": ["Selenium", "Java", "Jenkins", "Jenkins API", "Next.js", "React", "CI/CD", "Test automation", "Salesforce"],
       "features": [
-        "Selenium UI test suite",
-        "Jenkins pipeline integration",
-        "Self-service test execution UI",
-        "Results visualization for stakeholders",
-        "Regression coverage for critical flows"
+        "Complete Selenium test suite",
+        "Independent test repository",
+        "Scheduled test runs in Jenkins",
+        "Next.js app on the Jenkins API",
+        "Feature on/off selection for test runs",
+        "Self-service results for non-technical users"
       ],
       "projectImage": "/images/projects/triple-point-logo.png",
       "projectLogo": "/images/projects/triple-point-logo.png",
       "isPersonal": false,
-      "showcaseOrder": 6
+      "showcaseOrder": 3
     },
     {
       "id": "flexcare-netsuite-vue",
       "company": "FlexCare",
-      "project": "NetSuite CRM Front-end Application",
+      "project": "NetSuite CRM front-end application",
       "visibility": "internal",
       "url": null,
       "location": "United States",
       "startDate": "2023-08",
       "endDate": "2024-06",
       "role": "Lead Front-end Developer",
-      "shortDescription": "Developed Vue.js modules deployed inside NetSuite to support employee time tracking and internal CRM workflows for a US healthcare staffing company.",
-      "longDescription": "Built and extended front-end modules for FlexCare (US healthcare staffing), delivering a time-tracking and internal workflow UI deployed within the NetSuite environment. Focused on reliable day-to-day usability for operational teams, integrating with CRM processes and NetSuite data while working within platform constraints.",
-      "challenge": "Operational users needed a simple, dependable interface, while NetSuite deployment and integration constraints limited the available tooling and patterns.",
-      "solution": "Implemented Vue-based modules in JavaScript, integrated with CRM-related processes, and optimized UI flows to reduce manual effort for users. Kept the UI lightweight and aligned with business workflows.",
-      "impact": "Improved efficiency of time entry and internal processes by providing a clearer, purpose-built UI inside NetSuite.",
-      "technologies": ["Vue.js", "JavaScript", "NetSuite", "CRM Integration", "HTML", "CSS", "ERP Integrations"],
+      "shortDescription": "Joined as a front-end developer to extend an existing Vue app for a US healthcare staffing company. I saw it had been built as a single page with no real routing, defined what had to change, and became the Lead Front-end Developer who set the team's SPA architecture.",
+      "impactStory": {
+        "headline": "From a one-page Vue app to a proper SPA, and from developer to lead",
+        "gap": "I joined to help extend an existing Vue app. It had been built as a single page with no real routing, nowhere near the single-page-application standard the product needed.",
+        "action": "I mapped what had been built against what the product required, defined the changes, and set the standard for SPA structure, advanced routing and the front-end architecture as a whole.",
+        "result": "I became the team's Lead Front-end Developer, and the app got a scalable architecture the team could build on."
+      },
+      "highlights": [
+        "Identified that the existing Vue app was built as a single page without proper routing, and defined what had to change.",
+        "Became Lead Front-end Developer and set the team's standard for SPA structure, advanced routing and front-end architecture.",
+        "Delivered time-tracking and CRM workflow interfaces embedded in NetSuite for a US healthcare staffing company."
+      ],
+      "longDescription": "FlexCare is a US healthcare staffing company. I joined the team as a front-end developer to help develop an existing Vue application deployed inside NetSuite for time tracking and internal CRM workflows. When I compared what had been built with what the product needed, I saw the problem: the app was effectively one page, with no proper routing or structure, far from the single-page-application standard it needed. I identified what had to change, and I became the Lead Front-end Developer who set the SPA structure, the routing approach and the front-end architecture for the team.",
+      "challenge": "The existing Vue app had been built as a single page without proper routing or structure. It could not support the features the product needed, and adding more on top would only have made it worse.",
+      "solution": "I analysed the current app against the requirements, defined the target single-page-application structure with advanced routing, and led the team in moving to that architecture while delivering the time-tracking and CRM workflows.",
+      "impact": "The team got a scalable front-end architecture and clear standards to build on, and I stepped up from developer to Lead Front-end Developer.",
+      "technologies": ["Vue.js", "JavaScript", "SPA architecture", "Advanced routing", "Front-end architecture", "NetSuite", "CRM integration", "HTML", "CSS"],
       "features": [
-        "Time tracking UI flows",
-        "NetSuite embedded deployment",
-        "CRM/workflow integration",
-        "User-friendly forms and validation",
-        "Operational reliability"
+        "Audit of the existing Vue app",
+        "SPA structure and advanced routing",
+        "Front-end architecture standards for the team",
+        "Time tracking and CRM workflow UIs",
+        "NetSuite embedded deployment"
       ],
       "projectImage": "/images/projects/FlexCare-logo.png",
       "projectLogo": "/images/projects/FlexCare-logo.png",
       "isPersonal": false,
-      "showcaseOrder": 5
+      "showcaseOrder": 1
     },
     {
       "id": "proprio-netsuite-react-vue",
       "company": "Proprio",
-      "project": "NetSuite Enhancements Platform",
+      "project": "NetSuite ERP enhancements",
       "visibility": "internal",
       "url": null,
       "location": "United States",
       "startDate": "2024-06",
-      "endDate": "present",
+      "endDate": "2026-04",
       "role": "Front-end Developer",
-      "shortDescription": "Built React and Vue front-end extensions for NetSuite ERP, delivering deployable UI modules that enhance native workflows.",
-      "longDescription": "Developing standalone front-end modules in React and Vue that extend native NetSuite ERP functionality for US-based operations. Work includes building reusable UI components, managing complex state (Redux where needed), aligning with SuiteScript-backed flows, and ensuring smooth deployment and compatibility within NetSuite.",
-      "challenge": "NetSuite imposes constraints on deployment, runtime, and integration patterns, requiring careful engineering to deliver modern UX without breaking compatibility.",
-      "solution": "Developed reusable UI components, managed complex state (Redux where appropriate), integrated with NetSuite/SuiteScript flows, and ensured modules remained stable across deployments. Used Tailwind to keep UI consistent and fast to iterate.",
-      "impact": "Delivered maintainable UI extensions that improved internal workflows and reduced friction for day-to-day NetSuite users.",
+      "shortDescription": "React, Vue and NetSuite, all used daily. The app had first been generated with AI by a non-technical client and didn't work. I fixed what AI had broken, made it production-ready and covered every area the client needed, including my own SuiteScript.",
+      "impactStory": {
+        "headline": "Rescuing an AI-generated app with real framework knowledge",
+        "gap": "The client, who wasn't technical, had first built the app with AI. It looked like an app, but it didn't work, and nobody on their side could tell why.",
+        "action": "Because I know React, Vue and NetSuite, I could see what AI had got wrong. I fixed it, connected the front end properly to the NetSuite platform, and wrote my own SuiteScript where needed.",
+        "result": "A working, maintainable product, with one developer covering every area the client needed: React, Vue and NetSuite."
+      },
+      "highlights": [
+        "Took over an app first generated with AI by a non-technical client, fixed what AI had broken and made it work in production.",
+        "Worked daily across React, Vue and NetSuite, covering every front-end area the client needed.",
+        "Wrote my own SuiteScript, and used my NetSuite knowledge to connect the front end with the platform, work faster and troubleshoot issues."
+      ],
+      "longDescription": "Proprio needed front-end modules that extend native NetSuite ERP workflows for US-based operations. The application had first been built with AI by a non-technical client, and it didn't work. Because I knew the frameworks underneath, I could see where the generated code was wrong, fix it and make the application work. I worked daily across React, Vue and NetSuite, so I could cover every area the client needed. I even wrote my own SuiteScript. Understanding NetSuite helped me connect the front end with the platform properly, move faster and troubleshoot a lot of issues.",
+      "challenge": "The first version of the app had been generated with AI by a non-technical client. It didn't work, it was hard to reason about, and it had to run inside NetSuite's deployment and integration constraints.",
+      "solution": "I found and fixed what AI had broken, restructured the React and Vue modules, wrote SuiteScript where the platform needed it, and connected the front end properly to NetSuite.",
+      "impact": "The client got a working, maintainable product, and one developer able to cover React, Vue and NetSuite. It's a real-world example of why AI-generated code still needs someone who understands the frameworks.",
       "technologies": [
         "React",
         "Vue.js",
-        "Redux",
         "TypeScript",
         "JavaScript",
         "NetSuite",
         "SuiteScript",
+        "Redux",
         "Tailwind CSS",
-        "ERP Integrations"
+        "ERP integrations",
+        "Fixing AI-generated code"
       ],
       "features": [
-        "NetSuite-deployable UI modules",
-        "Reusable components",
-        "State management patterns",
-        "Integration with SuiteScript workflows",
-        "Consistent Tailwind styling"
+        "Rescue of an AI-generated application",
+        "React and Vue modules inside NetSuite",
+        "Custom SuiteScript",
+        "Front end connected properly to the NetSuite platform",
+        "Troubleshooting across front end and platform"
       ],
       "projectImage": "",
       "projectLogo": "",
       "isPersonal": false,
-      "showcaseOrder": 3
+      "showcaseOrder": 2
     },
     {
       "id": "iqair-shopify-migration",
       "company": "IQAir",
-      "project": "Headless Shopify E-commerce Platform",
+      "project": "Headless Shopify e-commerce platform",
       "visibility": "public",
       "url": "https://www.iqair.com/",
       "location": "United States",
       "startDate": "2025-01",
       "endDate": "2026-02",
-      "role": "Front-end Developer",
-      "shortDescription": "Built a headless Shopify storefront using React, Remix, and Hydrogen, integrating Shopify APIs and translating Liquid concepts into reusable components.",
-      "longDescription": "Worked on a commercial headless commerce build in close cooperation with Shopify. Implemented a React-based storefront using Remix and Shopify Hydrogen, consuming Shopify APIs and translating Liquid-driven behaviors into reusable React components. Focused on performance, SEO-friendly routing, and maintainable patterns in a fast-moving e-commerce codebase. Added unit and component tests to improve stability during iterative development.",
-      "challenge": "Traditional Liquid themes limited flexibility and performance tuning, while a headless approach required careful API modeling, SEO-friendly routing, and stable UI patterns under rapid iteration.",
-      "solution": "Implemented Hydrogen/Remix routes and reusable React components, optimized data fetching, and introduced unit/component tests to reduce regressions. Styled consistently with Tailwind and maintained a developer-friendly setup via Vite.",
-      "impact": "Improved maintainability and iteration speed for a production e-commerce storefront while keeping strong performance and SEO foundations.",
+      "role": "React Developer",
+      "shortDescription": "React developer in the team building IQAir's headless Shopify storefront with Remix and Hydrogen. My special contribution was translating Liquid theme code into React and learning how the Shopify platform and its APIs work.",
+      "impactStory": {
+        "headline": "Translating Shopify Liquid into React for a headless storefront",
+        "gap": "The store's behaviour lived in Liquid templates, and the new headless storefront needed the same behaviour in React, built on Shopify's APIs.",
+        "action": "Working in the team, I translated Liquid code into reusable React components on Remix and Hydrogen and learned how the Shopify platform and its APIs work.",
+        "result": "A production headless storefront for a global brand, and hands-on Shopify and e-commerce knowledge I can bring to the next team."
+      },
+      "highlights": [
+        "Translated Liquid theme code into reusable, typed React components for a headless storefront built on Remix and Shopify Hydrogen.",
+        "Learned the Shopify platform and its APIs in depth: real e-commerce experience I can bring to the next team.",
+        "Worked in the team on performance, SEO-friendly routing, and unit and component tests with React Testing Library."
+      ],
+      "longDescription": "IQAir moved its e-commerce storefront to a headless Shopify setup, built in close cooperation with Shopify. I joined as a React developer working in the team. What was special about this project was translating the existing Liquid theme code into React components on Remix and Shopify Hydrogen, which meant learning how the Shopify platform and its APIs work. Alongside that, I contributed to performance, SEO-friendly routing, and unit and component tests.",
+      "challenge": "The store's logic and UI lived in Liquid templates. The headless storefront needed the same behaviour as typed, reusable React components on Shopify's APIs, without losing performance or SEO.",
+      "solution": "I translated Liquid code into React components on Remix and Hydrogen, integrated Shopify APIs, and added unit and component tests to keep a fast-moving codebase stable.",
+      "impact": "A production headless storefront for a global brand, plus practical Shopify platform and API knowledge that gives me an advantage on e-commerce projects.",
       "technologies": [
         "React",
         "Remix",
@@ -144,77 +504,76 @@
         "TypeScript",
         "Shopify API",
         "Liquid",
+        "Headless commerce",
         "Tailwind CSS",
         "Vite",
         "React Testing Library",
-        "Unit Testing",
-        "Headless Commerce"
+        "SEO"
       ],
       "features": [
-        "Headless storefront architecture",
+        "Liquid to React translation",
+        "Headless Shopify storefront",
         "Shopify API integration",
-        "Reusable component patterns",
         "SEO-friendly routing & rendering",
         "Unit/component test coverage"
       ],
       "projectImage": "/images/projects/IQAir_logo.svg.png",
       "projectLogo": "/images/projects/IQAir_logo.svg.png",
       "isPersonal": false,
-      "showcaseOrder": 1
+      "showcaseOrder": 4
     },
     {
       "id": "octopus-learning-platform",
       "company": "Octopus",
-      "project": "English Learning Platform UI",
+      "project": "Learning platform UI",
       "visibility": "public",
       "url": "https://www.octopus.study/ux/start",
       "location": "Poland / International",
       "startDate": "2024-06",
       "endDate": "2025-03",
       "role": "Lead Front-end Developer",
-      "shortDescription": "Lead Front-end Developer for a UX/UI learning platform, owning front-end architecture and delivering a scalable Next.js + React UI.",
-      "longDescription": "Octopus is a Poland-based learning platform for UX/UI professionals. As Lead Front-end Developer, I owned front-end architecture and implementation standards, partnering with design and product to ship a consistent, accessible UI. Built scalable components and pages in Next.js/React, improved performance for content-heavy views, and supported team delivery through code reviews and technical guidance.",
-      "challenge": "The product required a consistent, accessible UI and strong performance on content-heavy pages, while supporting rapid iteration and multiple contributors.",
-      "solution": "Designed a scalable component architecture, implemented key views in Next.js/React, and introduced conventions for code structure and review. Focused on performance, accessibility, and a consistent Tailwind-based UI system.",
-      "impact": "Enabled faster feature delivery with a maintainable UI foundation, improved consistency across the product, and supported team productivity through clear front-end standards.",
-      "technologies": [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "HTML",
-        "Front-end Architecture",
-        "Performance Optimization",
-        "Accessibility"
+      "shortDescription": "Lead front-end developer on a side project: a Next.js and React UI for an online learning platform, written by hand before AI coding tools.",
+      "highlights": [
+        "Led the front end of a Next.js and React learning platform as a side engagement alongside my main project.",
+        "Built the components and pages with Tailwind CSS, all hand-written before AI coding tools.",
+        "Owned code structure and reviews for the front end."
       ],
+      "longDescription": "Octopus is a Poland-based online learning platform. I was the Lead Front-end Developer on it as a side project alongside my main engagement. It was pure front-end work: building the components and pages in Next.js, React and Tailwind CSS and owning the front-end code structure. It was all written by hand, before AI coding tools became part of my workflow.",
+      "challenge": "Deliver a consistent, responsive UI for a content-heavy learning platform as a side project, with limited time.",
+      "solution": "Built the front end in Next.js and React with a reusable Tailwind-based component set and a clear code structure.",
+      "impact": "A working, consistent front end for the platform, and more lead experience.",
+      "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS", "HTML", "Responsive design"],
       "features": [
-        "Scalable front-end architecture",
-        "Design-system-like component reuse",
-        "Performance improvements for content pages",
-        "Accessibility-minded UI delivery",
-        "Code reviews and technical leadership"
+        "Next.js and React front end",
+        "Reusable Tailwind components",
+        "Lead front-end ownership",
+        "Hand-written, pre-AI codebase"
       ],
       "projectImage": "/images/projects/octopus-logo.svg",
       "projectLogo": "/images/projects/octopus-logo.svg",
       "isPersonal": false,
-      "showcaseOrder": 2
+      "showcaseOrder": 5
     },
     {
       "id": "beautylash-website",
       "company": "BeautyLash",
-      "project": "BeautyLash Salon Website",
+      "project": "Beauty salon website",
       "visibility": "public",
       "url": "https://beautylash-83d09.web.app/",
       "location": "Poland",
       "startDate": "2020-06",
       "endDate": "2021-01",
-      "role": "Front-end Developer",
-      "shortDescription": "Commercial website for a beauty salon, built as an early React project with a focus on UI styling and client needs.",
-      "longDescription": "BeautyLash was one of my first commercial front-end projects, created before starting my professional career. It was a website for an eyelash beautician salon, designed to present services, pricing, and contact information in a clean and visually appealing way. The project was built using React and styled-components, with a strong focus on layout, styling, and responsiveness. Although the original site is no longer live, a deployed version is available for preview purposes.",
+      "role": "Front-end Developer (freelance)",
+      "shortDescription": "Commercial website for a beauty salon, built in React with styled-components. One of my first client projects.",
+      "highlights": [
+        "Designed and built a complete commercial website for a real client, end to end.",
+        "Responsive React UI with styled-components and SCSS."
+      ],
+      "longDescription": "BeautyLash was one of my first commercial front-end projects, created before starting my professional career. It was a website for an eyelash beautician salon, designed to present services, pricing and contact information in a clean and visually appealing way. The project was built using React and styled-components, with a strong focus on layout, styling and responsiveness. The original site is no longer live, but a deployed version is available for preview.",
       "challenge": "Designing and implementing a complete commercial website independently while learning React and modern styling approaches.",
-      "solution": "Built a React-based application using styled-components and SCSS, focusing on reusable components, consistent styling, and a responsive layout tailored to the client’s business needs.",
-      "impact": "Delivered a fully functional commercial website for a real client, gaining hands-on experience with client communication, project ownership, and modern front-end development fundamentals.",
-      "technologies": ["React", "JavaScript", "Styled Components", "SCSS", "CSS", "Responsive Design"],
+      "solution": "Built a React application using styled-components and SCSS, focusing on reusable components, consistent styling and a responsive layout tailored to the client's business needs.",
+      "impact": "Delivered a fully functional commercial website for a real client, and gained hands-on experience with client communication and project ownership.",
+      "technologies": ["React", "JavaScript", "Styled Components", "SCSS", "CSS", "Responsive design"],
       "features": [
         "Service and pricing sections",
         "Responsive layout",
@@ -229,19 +588,23 @@
     {
       "id": "as-service-website",
       "company": "AS Serwis",
-      "project": "AS Serwis Website",
+      "project": "Heating installer business website",
       "visibility": "public",
       "url": "https://www.asserwis-kotly-krakow.pl/",
       "location": "Poland",
       "startDate": "2024-09",
       "endDate": "2024-12",
-      "role": "Front-end Developer",
-      "shortDescription": "Modern business website built with Next.js for a gas heating systems installer.",
-      "longDescription": "AS Serwis is a modern business website created for a gas heating devices installer. The project focused on clarity, performance, and trust-building for a service-oriented business. Built with Next.js and TypeScript, the site emphasizes fast load times, SEO-friendly structure, and maintainable styling using CSS Modules. The application was deployed on Vercel and designed to be easily extendable as the business grows.",
-      "challenge": "Creating a professional, trustworthy online presence for a technical service business while maintaining high performance and clean architecture.",
-      "solution": "Implemented a Next.js application with TypeScript and CSS Modules, focusing on semantic structure, responsive design, and SEO best practices. Deployed using Vercel for reliability and fast delivery.",
-      "impact": "Delivered a production-ready website that supports business visibility, improves client trust, and demonstrates modern front-end development practices.",
-      "technologies": ["Next.js", "React", "TypeScript", "CSS Modules", "Vite", "Vercel", "SEO"],
+      "role": "Front-end Developer (freelance)",
+      "shortDescription": "Fast, SEO-friendly business website built with Next.js and TypeScript for a gas heating installer, deployed on Vercel.",
+      "highlights": [
+        "Built and deployed a production Next.js and TypeScript site on Vercel.",
+        "SEO-friendly structure, fast load times and a clear presentation of services."
+      ],
+      "longDescription": "AS Serwis is a modern business website created for a gas heating devices installer. The project focused on clarity, performance and trust-building for a service-oriented business. Built with Next.js and TypeScript, the site emphasizes fast load times, an SEO-friendly structure and maintainable styling using CSS Modules. It is deployed on Vercel and designed to be easy to extend as the business grows.",
+      "challenge": "Creating a professional, trustworthy online presence for a technical service business while keeping performance high and the architecture clean.",
+      "solution": "Implemented a Next.js application with TypeScript and CSS Modules, focusing on semantic structure, responsive design and SEO best practices. Deployed on Vercel for reliability and fast delivery.",
+      "impact": "A production-ready website that supports the business's visibility and builds client trust.",
+      "technologies": ["Next.js", "React", "TypeScript", "CSS Modules", "Vercel", "SEO"],
       "features": [
         "SEO-friendly pages",
         "Responsive layout",
@@ -256,15 +619,15 @@
     }
   ],
   "about": {
-    "intro": "Front-end Developer with 4+ years of commercial experience building React and TypeScript applications—from headless Shopify e-commerce (Remix/Hydrogen) to enterprise NetSuite (React/Vue) extensions. Strong focus on performance, scalable UI architecture, maintainable code, and automated testing in international, cross-functional teams.",
+    "intro": "React front-end developer with 4+ years of commercial experience in React, Next.js, TypeScript and Vue, across headless Shopify e-commerce, NetSuite ERP extensions, healthcare CRM, an online learning platform and a reinsurance policy platform. Every project has needed something different, and I've made a habit of finding what's missing and building it. Before tech, I spent 12+ years managing teams in international hospitality.",
     "previousCareer": {
       "title": "12+ Years in Hospitality Management",
-      "description": "Before transitioning to tech, I built a successful career in the hotel industry spanning over 12 years. I held senior management positions where I was responsible for leading teams, managing operations, and delivering exceptional guest experiences at international properties.",
+      "description": "Before moving into tech, I built a career in the hotel industry spanning over 12 years. I held senior management positions where I led teams, ran operations and delivered excellent guest experiences at international properties.",
       "highlights": [
         "Managed teams of 20+ staff members across multiple departments",
-        "Responsible for budgets, KPIs, and operational excellence",
-        "Developed strong leadership, communication, and problem-solving skills",
-        "Worked with diverse international teams and clientele"
+        "Responsible for budgets, KPIs and operational excellence",
+        "Developed strong leadership, communication and problem-solving skills",
+        "Worked with diverse international teams and guests"
       ],
       "skills": [
         "Team Leadership",
@@ -277,12 +640,12 @@
     },
     "journey": {
       "title": "My Transition into Tech",
-      "description": "After 12+ years of building a successful career in hospitality management, I discovered my passion for coding and made a deliberate career change. The analytical thinking, problem-solving abilities, and people skills I developed as a manager translate directly into my work as a developer. What started as curiosity turned into a full commitment to mastering modern web technologies.",
+      "description": "After 12+ years in hospitality management, I discovered a passion for coding and made a deliberate career change. The analytical thinking, problem solving and people skills I built as a manager carry straight into my work as a developer: I notice what isn't working, I take ownership of fixing it, and I'm comfortable talking to stakeholders about it. What started as curiosity became a full commitment to modern web engineering, and now to AI-augmented development.",
       "highlights": [
-        "Leveraged management experience to excel in collaborative development teams",
-        "Made a career transition through intensive self-study and coding bootcamps",
-        "Quickly progressed from fundamentals to advanced frameworks",
-        "Now working with international clients on enterprise-level projects"
+        "Brought management experience into collaborative development teams",
+        "Changed careers through intensive self-study and a 420-hour bootcamp",
+        "Stepped up to Lead Front-end Developer by fixing a broken architecture",
+        "Now delivering for international clients in e-commerce, ERP, education and insurance"
       ]
     },
     "education": [
@@ -304,38 +667,31 @@
         "type": "bootcamp",
         "title": "Full Stack Developer Bootcamp",
         "institution": "Codebrainers",
-        "description": "420-hour intensive coding course covering Frontend and Backend technologies. Learned Python, SQL, JavaScript, HTML, CSS, and React in a small training group under experienced programmers.",
+        "description": "420-hour intensive coding course covering front-end and back-end technologies: Python, SQL, JavaScript, HTML, CSS and React, in a small group led by experienced programmers.",
         "year": "2020 - 2021"
       },
       {
         "type": "course",
         "title": "React: Beginner to Advanced",
         "institution": "Eduweb",
-        "description": "Comprehensive React learning path covering render props, propTypes, Styled Components, Redux, GSAP, Atomic Design, Storybook, and Context API.",
+        "description": "React learning path covering render props, propTypes, Styled Components, Redux, GSAP, Atomic Design, Storybook and the Context API.",
         "year": "2021"
-      }
-    ],
-    "certifications": [
-      {
-        "name": "Update with your certification",
-        "issuer": "Certification provider",
-        "year": "Year"
       }
     ],
     "values": [
       {
-        "title": "Code Quality & Performance",
-        "description": "I build scalable, maintainable architectures with a focus on performance, SEO optimization, and automated testing to ship confidently.",
+        "title": "Find the Gap, Fill It",
+        "description": "Each project needs something different. I look for what's missing, whether architecture, documentation or tooling, and build it.",
         "emphasized": false
       },
       {
         "title": "AI-Augmented Development",
-        "description": "I actively integrate AI tools into my workflow to accelerate development, optimize code quality, and stay at the forefront of modern engineering practices.",
+        "description": "AI agents are my day-to-day assistant, from Jira tickets and analysis to code, PRs and docs. I set the direction and review every change.",
         "emphasized": true
       },
       {
-        "title": "User-Centered Delivery",
-        "description": "I translate UX into accessible, responsive interfaces that work reliably for real users and business workflows.",
+        "title": "Quality You Can Ship",
+        "description": "Clean, maintainable front-end code, tested like a user would use it, so releases are calm.",
         "emphasized": false
       }
     ]

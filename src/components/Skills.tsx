@@ -1,149 +1,66 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SectionHeader } from "./atoms";
+import data from "@/data/data.json";
+import type { SkillCategory } from "@/types";
+import { Icon, SectionHeader } from "./atoms";
 
-const skillCategories = [
-  {
-    name: "Front-end Development",
-    color: "var(--accent-1)",
-    skills: ["React", "Next.js", "Remix", "Vue.js", "TypeScript", "JavaScript", "HTML5"],
-  },
-  {
-    name: "Styling & UI",
-    color: "var(--accent-2)",
-    skills: [
-      "Tailwind CSS",
-      "CSS Modules",
-      "SCSS",
-      "Styled Components",
-      "Responsive Design",
-      "UI Architecture",
-      "Performance Optimization",
-    ],
-  },
-  {
-    name: "Platforms, APIs & Testing",
-    color: "var(--accent-3)",
-    skills: [
-      "Shopify Hydrogen",
-      "Shopify API",
-      "Liquid",
-      "NetSuite",
-      "SuiteScript",
-      "CRM Integrations",
-      "REST APIs",
-      "React Testing Library",
-      "Jest",
-      "Cypress",
-      "Playwright",
-      "Selenium",
-    ],
-  },
-  {
-    name: "Tooling & Collaboration",
-    color: "var(--accent-4)",
-    skills: ["Git", "GitHub", "Bitbucket", "Jira", "ClickUp", "Confluence", "CI/CD", "Jenkins", "Agile / Scrum"],
-  },
-];
-
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 },
-};
+const skillCategories: SkillCategory[] = data.skills;
 
 export function Skills() {
   return (
-    <section id="skills" className="py-32 bg-[var(--bg-secondary)] relative overflow-hidden">
-      {/* Background pattern */}
-      <div className="absolute inset-0 opacity-30">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `radial-gradient(circle at 1px 1px, var(--text-muted) 1px, transparent 0)`,
-            backgroundSize: "40px 40px",
-          }}
-        />
-      </div>
-
+    <section id="skills" className="py-24 md:py-32 bg-white relative overflow-hidden scroll-mt-16">
       <div className="max-w-7xl mx-auto px-4 md:px-12 lg:px-20 relative z-10">
         <SectionHeader
-          badge="Tech Stack"
+          badge="Skills"
           badgeColor="accent-1"
           title="Skills &"
-          gradientWord="Expertise"
-          className="mb-20"
+          gradientWord="tech stack"
+          subtitle="Everything I use in commercial work, grouped by what it does for the product."
+          className="mb-14"
         />
 
-        {/* Skills Grid */}
-        <motion.div
-          className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          {skillCategories.map((category, categoryIndex) => (
-            <motion.div key={category.name} variants={itemVariants} className="group">
-              <motion.div
-                className="bg-white rounded-2xl md:rounded-3xl p-5 md:p-8 h-full shadow-lg hover:shadow-2xl transition-all relative overflow-hidden"
-                whileHover={{ y: -10 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                {/* Decorative corner */}
-                <motion.div
-                  className="absolute -top-10 -right-10 w-32 h-32 rounded-full opacity-20 group-hover:opacity-40 transition-opacity"
-                  style={{ background: category.color }}
-                  animate={{
-                    scale: [1, 1.1, 1],
-                  }}
-                  transition={{ duration: 3, repeat: Infinity, delay: categoryIndex * 0.5 }}
-                />
-
-                <div className="relative z-10">
-                  <div
-                    className="w-12 h-12 rounded-2xl mb-6 flex items-center justify-center"
-                    style={{ background: category.color }}
-                  >
-                    <span className="text-2xl font-bold text-[var(--text-primary)]">{category.name.charAt(0)}</span>
-                  </div>
-
-                  <h3 className="text-lg md:text-xl font-bold mb-4 md:mb-6">{category.name}</h3>
-
-                  <ul className="space-y-3">
-                    {category.skills.map((skill, skillIndex) => (
-                      <motion.li
-                        key={skill}
-                        className="flex items-center gap-3 text-[var(--text-secondary)]"
-                        initial={{ opacity: 0, x: -10 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: skillIndex * 0.1 }}
-                      >
-                        <motion.span
-                          className="w-2 h-2 rounded-full"
-                          style={{ background: category.color }}
-                          whileHover={{ scale: 2 }}
-                        />
-                        {skill}
-                      </motion.li>
-                    ))}
-                  </ul>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {skillCategories.map((category, index) => (
+            <motion.article
+              key={category.name}
+              className={`rounded-2xl p-6 md:p-7 ${
+                category.emphasized
+                  ? "bg-gradient-to-br from-[#7c3aed] to-[#db2777] text-white shadow-xl"
+                  : "surface"
+              }`}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.5, delay: index * 0.06 }}
+            >
+              <div className="flex items-center gap-3 mb-5">
+                <div
+                  className={`w-10 h-10 rounded-xl flex items-center justify-center ${
+                    category.emphasized ? "bg-white/20" : "bg-[var(--bg-secondary)] text-[#7c3aed]"
+                  }`}
+                >
+                  <Icon name={category.icon} className="w-5 h-5" />
                 </div>
-              </motion.div>
-            </motion.div>
+                <h3 className="text-lg font-bold">{category.name}</h3>
+              </div>
+              <ul className="flex flex-wrap gap-2">
+                {category.skills.map((skill) => (
+                  <li
+                    key={skill}
+                    className={`px-3 py-1 rounded-full text-sm ${
+                      category.emphasized
+                        ? "bg-white/15 text-white"
+                        : "bg-[var(--bg-primary)] border border-[var(--border-soft)] text-[var(--text-secondary)]"
+                    }`}
+                  >
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </motion.article>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

@@ -25,7 +25,7 @@ export function ProjectCTA({ gradient }: ProjectCTAProps) {
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
         >
-          I'm always open to discussing new projects and opportunities.
+          I&apos;m open to new roles in front-end development, QA, or both.
         </motion.p>
         <motion.a
           href="/#contact"

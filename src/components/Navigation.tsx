@@ -2,13 +2,15 @@
 
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 const navItems = [
-  { label: "About", href: "/#about" },
-  { label: "Timeline", href: "/#timeline" },
+  { label: "What I do", href: "/#services" },
+  { label: "Impact", href: "/#impact" },
+  { label: "AI workflow", href: "/#ai-workflow" },
+  { label: "Experience", href: "/#experience" },
   { label: "Skills", href: "/#skills" },
-  { label: "Projects", href: "/#projects" },
-  { label: "Contact", href: "/#contact" },
+  { label: "About", href: "/#about" },
 ];
 
 export function Navigation() {
@@ -52,12 +54,15 @@ export function Navigation() {
               whileHover={{ scale: 1.05 }}
             >
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#7c3aed] to-[#db2777] flex items-center justify-center">
-                <span className="text-white font-bold text-lg">&lt;/&gt;</span>
+                <span className="text-white font-bold text-base tracking-tight">PM</span>
               </div>
-              <span className="text-xl font-semibold text-[var(--text-primary)] hidden sm:block">Paulina</span>
+              <span className="hidden sm:flex lg:hidden xl:flex flex-col leading-tight">
+                <span className="text-base font-semibold text-[var(--text-primary)]">Paulina Murzanska</span>
+                <span className="text-xs text-[var(--text-muted)]">React Front-end · AI-augmented</span>
+              </span>
             </motion.a>
 
-            <ul className="hidden md:flex items-center gap-8">
+            <ul className="hidden lg:flex items-center gap-6">
               {navItems.map((item, index) => (
                 <motion.li
                   key={item.href}
@@ -78,7 +83,7 @@ export function Navigation() {
               ))}
             </ul>
 
-            <div className="hidden md:flex items-center gap-3">
+            <div className="hidden lg:flex items-center gap-3">
               <motion.a
                 href="/paulina-murzanska-cv.pdf"
                 download="Paulina-Murzanska-CV.pdf"
@@ -97,13 +102,15 @@ export function Navigation() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
               >
-                Let's Connect
+                Contact me
               </motion.a>
             </div>
 
             <button
-              className="md:hidden p-2 z-50"
+              className="lg:hidden p-2 z-50"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isMobileMenuOpen}
             >
               <div className="w-6 h-5 flex flex-col justify-between relative">
                 <motion.span
@@ -127,7 +134,7 @@ export function Navigation() {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
-            className="fixed inset-0 z-40 md:hidden"
+            className="fixed inset-0 z-40 lg:hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -177,13 +184,13 @@ export function Navigation() {
                     </svg>
                     Download CV
                   </a>
-                  <a
+                  <Link
                     href="/#contact"
                     className="block w-full text-center px-6 py-3 rounded-full bg-gradient-to-r from-[#7c3aed] to-[#db2777] text-white font-medium"
                     onClick={handleMobileNavClick}
                   >
-                    Let's Connect
-                  </a>
+                    Contact me
+                  </Link>
                 </motion.li>
               </ul>
             </motion.div>

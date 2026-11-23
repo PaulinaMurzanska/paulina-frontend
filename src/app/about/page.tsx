@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import aboutData from "@/data/data.json";
-import { Navigation, FunFacts, MyFocus } from "@/components";
+import { Navigation, FunFacts, MyFocus, Footer } from "@/components";
 
 const about = aboutData.about;
 
@@ -224,7 +224,6 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Fun Facts / Free Time Section */}
         <FunFacts />
 
         {/* CTA */}
@@ -236,10 +235,10 @@ export default function AboutPage() {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Let's Work Together
+                Let&apos;s Work Together
               </h2>
               <p className="text-[var(--text-secondary)] mb-8 max-w-xl mx-auto">
-                I bring both technical expertise and years of leadership experience to every project.
+                React front-end development, architecture and the gaps in between, with an AI-augmented workflow and years of leadership experience behind it.
               </p>
               <motion.div
                 className="inline-block"
@@ -261,9 +260,7 @@ export default function AboutPage() {
         </section>
       </main>
 
-      <footer className="py-8 text-center text-[var(--text-muted)] text-sm">
-        <p>2026 · Crafted with Next.js & Framer Motion</p>
-      </footer>
+      <Footer />
     </>
   );
 }

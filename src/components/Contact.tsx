@@ -1,25 +1,22 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { FiDownload, FiGithub, FiLinkedin, FiMail, FiMapPin, FiPhone } from "react-icons/fi";
+import data from "@/data/data.json";
 import { SectionBadge } from "./atoms";
+
+const { profile } = data;
+
+const links = [
+  { label: "Phone", value: profile.phone, href: profile.phoneHref, icon: FiPhone, external: false },
+  { label: "LinkedIn", value: "LinkedIn profile", href: profile.linkedin, icon: FiLinkedin, external: true },
+  { label: "GitHub", value: "PaulinaMurzanska", href: profile.github, icon: FiGithub, external: true },
+];
 
 export function Contact() {
   return (
-    <section id="contact" className="py-32 relative overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[var(--bg-primary)] to-[var(--bg-secondary)]" />
-
-      {/* Animated background elements */}
-      <motion.div
-        className="absolute top-20 left-20 w-64 h-64 rounded-full bg-[var(--accent-1)] opacity-30 blur-3xl"
-        animate={{ x: [0, 50, 0], y: [0, 30, 0] }}
-        transition={{ duration: 10, repeat: Infinity }}
-      />
-      <motion.div
-        className="absolute bottom-20 right-20 w-64 h-64 rounded-full bg-[var(--accent-3)] opacity-30 blur-3xl"
-        animate={{ x: [0, -50, 0], y: [0, -30, 0] }}
-        transition={{ duration: 12, repeat: Infinity }}
-      />
+    <section id="contact" className="py-24 md:py-32 relative overflow-hidden scroll-mt-16">
+      <div className="absolute inset-0 bg-gradient-to-b from-white to-[var(--bg-secondary)]" />
 
       <div className="max-w-4xl mx-auto px-4 md:px-12 lg:px-20 relative z-10">
         <motion.div
@@ -29,110 +26,59 @@ export function Contact() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <SectionBadge color="accent-2">Get in Touch</SectionBadge>
+          <SectionBadge color="accent-4">{profile.availability}</SectionBadge>
 
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
-            Let's <span className="gradient-text">Connect</span>
+            Got a gap in your product? <span className="gradient-text">Let&apos;s fill it.</span>
           </h2>
 
-          <p className="text-base md:text-xl text-[var(--text-secondary)] mb-8 md:mb-12 max-w-2xl mx-auto">
-            Open to new opportunities and interesting projects. Feel free to reach out!
+          <p className="text-base md:text-xl text-[var(--text-secondary)] mb-10 max-w-2xl mx-auto">
+            I&apos;m looking for my next role as a React / front-end developer in a team that takes AI-augmented
+            development seriously. {profile.employment}. {profile.workModes}.
           </p>
 
-          {/* Email CTA */}
-          <motion.a
-            href="mailto:p.murzanska@gmail.com"
-            className="inline-block"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            <motion.div
-              className="relative group"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-12">
+            <a
+              href={`mailto:${profile.email}`}
+              className="inline-flex items-center gap-2 px-7 py-4 rounded-full bg-gradient-to-r from-[#7c3aed] to-[#db2777] text-white font-semibold text-base md:text-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-[#7c3aed] to-[#db2777] rounded-2xl blur-lg opacity-50 group-hover:opacity-80 transition-opacity" />
-              <div className="relative px-6 py-4 md:px-12 md:py-6 bg-gradient-to-r from-[#7c3aed] to-[#db2777] rounded-2xl text-white font-semibold text-sm md:text-lg">
-                p.murzanska@gmail.com
-              </div>
-            </motion.div>
-          </motion.a>
-
-          {/* Social Links */}
-          <motion.div
-            className="flex justify-center flex-wrap gap-3 md:gap-6 mt-8 md:mt-12"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-          >
-            <motion.a
-              href="tel:+48514132314"
-              className="w-11 h-11 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-white shadow-lg flex items-center justify-center text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
-              whileHover={{ y: -5, boxShadow: "0 20px 40px rgba(0,0,0,0.1)" }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-              </svg>
-            </motion.a>
-            <motion.a
-              href="https://github.com/PaulinaMurzanska"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-11 h-11 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-white shadow-lg flex items-center justify-center text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
-              whileHover={{ y: -5, boxShadow: "0 20px 40px rgba(0,0,0,0.1)" }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-              </svg>
-            </motion.a>
-            <motion.a
-              href="https://www.linkedin.com/in/paulina-murza%C5%84ska-858b6544/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-11 h-11 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-white shadow-lg flex items-center justify-center text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
-              whileHover={{ y: -5, boxShadow: "0 20px 40px rgba(0,0,0,0.1)" }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-              </svg>
-            </motion.a>
-            <motion.a
-              href="/paulina-murzanska-cv.pdf"
+              <FiMail className="w-5 h-5" aria-hidden="true" />
+              {profile.email}
+            </a>
+            <a
+              href={profile.cv}
               download="Paulina-Murzanska-CV.pdf"
-              className="relative group w-11 h-11 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-gradient-to-r from-[#7c3aed] to-[#db2777] shadow-lg flex items-center justify-center text-white hover:shadow-xl transition-all"
-              whileHover={{ y: -5, boxShadow: "0 20px 40px rgba(124,58,237,0.3)" }}
-              whileTap={{ scale: 0.95 }}
+              className="inline-flex items-center gap-2 px-7 py-4 rounded-full bg-[var(--text-primary)] text-white font-semibold text-base md:text-lg hover:shadow-xl hover:-translate-y-0.5 transition-all"
             >
-              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-              {/* Tooltip */}
-              <span className="absolute -top-10 left-1/2 -translate-x-1/2 px-3 py-1.5 bg-[var(--text-primary)] text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
-                Download CV
-              </span>
-            </motion.a>
-          </motion.div>
+              <FiDownload className="w-5 h-5" aria-hidden="true" />
+              Download CV
+            </a>
+          </div>
 
-          {/* Availability badge */}
-          <motion.div
-            className="mt-10 md:mt-16 inline-flex items-center gap-2 md:gap-3 px-4 py-2 md:px-6 md:py-3 rounded-full bg-[var(--accent-4)] text-[var(--text-secondary)] text-sm md:text-base"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.4 }}
-          >
-            <motion.span
-              className="w-3 h-3 rounded-full bg-green-500"
-              animate={{ scale: [1, 1.2, 1] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            />
-            <span className="font-medium">Available for new projects</span>
-          </motion.div>
+          <ul className="grid sm:grid-cols-3 gap-4 text-left">
+            {links.map(({ label, value, href, icon: LinkIcon, external }) => (
+              <li key={label}>
+                <a
+                  href={href}
+                  {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                  className="surface rounded-2xl p-4 flex items-center gap-3 hover:-translate-y-0.5 transition-transform"
+                >
+                  <span className="w-10 h-10 rounded-xl bg-[var(--bg-secondary)] flex items-center justify-center text-[#7c3aed] flex-shrink-0">
+                    <LinkIcon className="w-5 h-5" aria-hidden="true" />
+                  </span>
+                  <span className="min-w-0">
+                    <span className="block text-xs uppercase tracking-wide text-[var(--text-muted)]">{label}</span>
+                    <span className="block text-sm font-medium text-[var(--text-primary)] truncate">{value}</span>
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+
+          <p className="mt-8 inline-flex items-center gap-2 text-sm text-[var(--text-muted)]">
+            <FiMapPin className="w-4 h-4" aria-hidden="true" />
+            {profile.location}
+          </p>
         </motion.div>
       </div>
     </section>
