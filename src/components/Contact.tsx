@@ -37,6 +37,20 @@ export function Contact() {
             development seriously. {profile.employment}. {profile.workModes}.
           </p>
 
+          <div className="mb-10">
+            <p className="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-3">Where I fit best</p>
+            <ul className="flex flex-wrap justify-center gap-2">
+              {profile.bestFit.map((fit) => (
+                <li
+                  key={fit}
+                  className="px-3 py-1.5 rounded-full bg-white border border-[var(--border-soft)] text-sm text-[var(--text-primary)]"
+                >
+                  {fit}
+                </li>
+              ))}
+            </ul>
+          </div>
+
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-12">
             <a
               href={`mailto:${profile.email}`}

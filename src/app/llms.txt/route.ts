@@ -17,6 +17,7 @@ function buildProfileText(): string {
     profile.summary,
     "",
     "## Quick facts",
+    `- Building with React: ${profile.buildingExperience} years (since ${profile.buildingSince}, freelance and training before commercial roles)`,
     `- Commercial experience: ${years}+ years (since ${profile.careerStart})`,
     `- Location: ${profile.location} (${profile.workModes})`,
     `- Availability: ${profile.availability}; ${profile.employment}`,
@@ -30,6 +31,9 @@ function buildProfileText(): string {
     "",
     "## Why work with me",
     ...profile.whyMe.map((item) => `- ${item.claim}: ${item.proof}`),
+    "",
+    "## Where I fit best",
+    ...profile.bestFit.map((fit) => `- ${fit}`),
     "",
     "## What I can do for a team",
     ...services.map((service) => `- ${service.title}: ${service.description}`),
@@ -62,7 +66,7 @@ function buildProfileText(): string {
   for (const item of experiences) {
     lines.push(
       "",
-      `### ${item.role} at ${item.company} (${formatDateRange(item.startDate, item.endDate)})${item.isPersonal ? " [freelance]" : ""}`,
+      `### ${item.role} at ${item.company} (${formatDateRange(item.startDate, item.endDate)})${item.isPersonal ? " [freelance]" : ""}${item.parallelNote ? ` [${item.parallelNote}]` : ""}`,
       `${item.project}. ${item.shortDescription}`,
       ...(item.highlights ?? []).map((highlight) => `- ${highlight}`),
       `- Technologies: ${item.technologies.join(", ")}`,

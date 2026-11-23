@@ -18,6 +18,7 @@ export interface ProjectItem {
   shortDescription: string;
   impactStory?: ImpactStory;
   highlights?: string[];
+  parallelNote?: string;
   longDescription: string;
   challenge?: string;
   solution?: string;

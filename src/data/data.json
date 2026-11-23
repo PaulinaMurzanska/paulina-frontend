@@ -4,13 +4,18 @@
     "nativeName": "Paulina Murzańska",
     "role": "React Front-end Developer",
     "headline": "React Front-end Developer · AI-augmented development",
-    "summary": "React front-end developer with 4+ years of commercial experience in React, Next.js, TypeScript and Vue. Every project needs something different, so I adapt fast, spot the gaps nobody owns and fill them: an integrated documentation app that replaced scattered SharePoint files, a proper SPA architecture for a struggling Vue app, a self-service test runner for non-technical users, and a rescue of an AI-generated app that didn't work. I work AI-augmented, with agents assisting me from Jira ticket to docs and my review on every change.",
+    "summary": "React front-end developer with 5+ years building with React, Next.js, TypeScript and Vue, 4+ of them in commercial client teams, often on several client projects in parallel. Every project needs something different, so I adapt fast, spot the gaps nobody owns and fill them: a documentation app covering 5 applications and 15 releases that replaced scattered SharePoint files, a proper SPA architecture for a struggling Vue app as Lead Front-end in a team of 6, a self-service test runner for non-technical users, and a rescue of an AI-generated app that didn't work. I work AI-augmented, with agents assisting me from Jira ticket to docs and my review on every change.",
     "careerStart": "2022-03",
+    "buildingSince": "2020-06",
+    "buildingExperience": "5+",
     "location": "Kraków, Poland",
     "workModes": "Remote · Hybrid · On-site in Kraków",
     "employment": "Full-time · Part-time · B2B contract",
     "availability": "Open to new roles",
-    "languages": ["English (C1, fluent)", "Polish (native)"],
+    "languages": [
+      "English (C1, fluent)",
+      "Polish (native)"
+    ],
     "email": "p.murzanska@gmail.com",
     "phone": "+48 514 132 314",
     "phoneHref": "tel:+48514132314",
@@ -29,11 +34,26 @@
       "Testing & Playwright"
     ],
     "whyMe": [
-      { "claim": "Adapts fast", "proof": "Vue, Shopify, NetSuite: productive in days" },
-      { "claim": "Fills the gaps", "proof": "Missing docs or tooling? I build them" },
-      { "claim": "Knows the tech", "proof": "4+ years of React, Next.js, TypeScript, Vue" },
-      { "claim": "Works with AI", "proof": "Agents do the legwork, I review every change" },
-      { "claim": "Listens & communicates", "proof": "2× Lead Front-end · 12+ years leading teams" }
+      {
+        "claim": "Adapts fast",
+        "proof": "Vue, Shopify, NetSuite: productive in days"
+      },
+      {
+        "claim": "Fills the gaps",
+        "proof": "Built docs for 5 apps nobody had documented"
+      },
+      {
+        "claim": "Knows the tech",
+        "proof": "5+ years with React, Next.js, TypeScript, Vue"
+      },
+      {
+        "claim": "Works with AI",
+        "proof": "Agents from ticket to PR, docs on Karpathy's LLM Wiki"
+      },
+      {
+        "claim": "Listens & communicates",
+        "proof": "2× Lead Front-end · 12+ years leading teams"
+      }
     ],
     "targetRoles": [
       "Front-end Developer",
@@ -43,6 +63,14 @@
       "Lead Front-end Developer",
       "E-commerce Front-end Developer (Shopify)",
       "AI-augmented Software Engineer"
+    ],
+    "bestFit": [
+      "Product teams that want ownership, not just tickets",
+      "E-commerce on Shopify or headless commerce",
+      "ERP and NetSuite projects that need a real front end",
+      "Software houses and consultancies with changing clients",
+      "Teams adopting AI-augmented development",
+      "Lead or senior-track roles with client contact"
     ]
   },
   "services": [
@@ -51,28 +79,53 @@
       "icon": "code",
       "title": "Build front-end features",
       "description": "Production UI in React, Next.js, TypeScript and Vue: components, routing, state management, API integration, performance and SEO. Shipped for e-commerce, ERP, education and insurance products.",
-      "keywords": ["React", "Next.js", "TypeScript", "Vue.js", "Remix", "Tailwind CSS"]
+      "keywords": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Vue.js",
+        "Remix",
+        "Tailwind CSS"
+      ]
     },
     {
       "id": "architect",
       "icon": "layers",
       "title": "Fix and structure what's broken",
       "description": "I step into apps that grew the wrong way, whether a Vue app built as one page or an AI-generated app built by a non-technical client, and give them a working architecture: proper SPA structure, routing and clean component patterns.",
-      "keywords": ["Front-end architecture", "SPA routing", "Refactoring", "Code reviews", "Technical leadership"]
+      "keywords": [
+        "Front-end architecture",
+        "SPA routing",
+        "Refactoring",
+        "Code reviews",
+        "Technical leadership"
+      ]
     },
     {
       "id": "gaps",
       "icon": "target",
       "title": "Fill the gaps nobody owns",
-      "description": "If something slows the team down, I build the fix. Scattered SharePoint documents became an integrated documentation app. A terminal-only test suite became a web app that non-technical users run themselves.",
-      "keywords": ["Internal tools", "Documentation apps", "Jenkins API", "Automation", "Analytical thinking"]
+      "description": "If something slows the team down, I build the fix. Scattered SharePoint documents became a documentation app covering 5 applications and 15 releases. A terminal-only test suite became a web app that non-technical users run themselves.",
+      "keywords": [
+        "Internal tools",
+        "Documentation apps",
+        "Jenkins API",
+        "Automation",
+        "Analytical thinking"
+      ]
     },
     {
       "id": "quality",
       "icon": "shield",
       "title": "Ship with quality built in",
       "description": "QA experience means I test like a user and fix like a developer: Playwright and Selenium end-to-end tests, Jest and React Testing Library, plus clean Jira tickets and pull requests.",
-      "keywords": ["Playwright", "Selenium", "Jest", "React Testing Library", "Jira"]
+      "keywords": [
+        "Playwright",
+        "Selenium",
+        "Jest",
+        "React Testing Library",
+        "Jira"
+      ]
     }
   ],
   "aiWorkflow": {
@@ -130,7 +183,7 @@
         "title": "Document",
         "icon": "file",
         "me": "I decide what needs documenting, then edit for accuracy and publish.",
-        "agent": "Turns code changes into documentation pages and release notes."
+        "agent": "Keeps the docs wiki current with Karpathy's LLM Wiki pattern: code changes go in as sources, and the agent updates the pages, release notes and cross-links."
       }
     ],
     "principles": [
@@ -147,7 +200,17 @@
         "description": "Agents are only as good as the person checking them. Knowing React, Vue and the platform underneath is how I catch what AI gets wrong."
       }
     ],
-    "tools": ["Cursor", "AI coding agents", "MCP / API integrations", "Jira", "Confluence", "GitHub", "Azure DevOps", "Playwright"]
+    "tools": [
+      "Cursor",
+      "AI coding agents",
+      "MCP / API integrations",
+      "LLM Wiki (Karpathy pattern)",
+      "Jira",
+      "Confluence",
+      "GitHub",
+      "Azure DevOps",
+      "Playwright"
+    ]
   },
   "skills": [
     {
@@ -181,6 +244,7 @@
         "Prompt & context engineering",
         "MCP / API integrations",
         "AI-assisted code review",
+        "LLM Wiki (Karpathy pattern)",
         "AI-generated documentation",
         "Fixing AI-generated code"
       ]
@@ -261,28 +325,29 @@
       "startDate": "2026-03",
       "endDate": "present",
       "role": "React Front-end Developer / QA",
-      "shortDescription": "React front-end development and QA on a reinsurance policy administration platform. I spotted that the project's documentation was scattered across standalone SharePoint files and replaced it with an integrated documentation app that grows with every release.",
+      "shortDescription": "React front-end development and QA on a reinsurance policy administration platform. I spotted that the project's documentation was scattered across standalone SharePoint files and replaced it with a documentation app that now covers 5 applications and 15 releases.",
       "impactStory": {
-        "headline": "From scattered SharePoint files to an integrated documentation app",
-        "gap": "The project's documentation lived in standalone SharePoint documents. They were hard to find, quickly out of date and disconnected from the code that actually shipped.",
-        "action": "Nobody asked me to, but I saw the gap and built a wiki-style documentation app with a clean interface. Its pages are generated from code changes with the help of AI agents, so every release extends it.",
-        "result": "Documentation moved up to a professional level. It is current, searchable and tied to releases, which makes the work easier and more efficient for me, the team and the client."
+        "headline": "From scattered SharePoint files to docs for 5 apps and 15 releases",
+        "gap": "The project's documentation lived in standalone SharePoint documents. They were hard to find, quickly out of date and disconnected from the code that actually shipped, while the compliance department needed complete records.",
+        "action": "Nobody asked me to, but I saw the gap and built a documentation app on Karpathy's LLM Wiki pattern: code changes and releases go in as sources, and AI agents keep an interlinked wiki current, with my review.",
+        "result": "It now covers 5 applications and 15 releases. Each application has dedicated pages for user and technical documentation, release notes, test results and the documents the compliance department requires."
       },
       "highlights": [
-        "Replaced standalone SharePoint documents with an integrated, wiki-style documentation app I designed and built. It is generated from code changes with AI agents and grows with every release.",
-        "Build and fix React, Next.js and TypeScript screens on the shared component library.",
-        "Test the platform manually and with Playwright, and fix front-end issues myself instead of handing them off.",
+        "Built a documentation app on Karpathy's LLM Wiki pattern that replaced standalone SharePoint documents. It now covers 5 applications and 15 releases.",
+        "Each application has dedicated pages for user documentation, technical documentation, release notes, test results and compliance documentation, kept current by AI agents from code changes.",
+        "Build and fix React, Next.js and TypeScript screens on the shared component library, test manually and with Playwright, and fix front-end issues myself.",
         "Write, refine and triage Jira tickets, and use AI agents across the delivery cycle with my review on every change."
       ],
-      "longDescription": "Pelagos is a reinsurance company. On its policy administration platform I work as a React front-end developer with QA responsibilities. Early on I noticed that the project's documentation was a set of standalone SharePoint documents: hard to find, quickly stale and disconnected from the code. I decided it would be more efficient for everyone to have documentation that lives with the product, so I designed and built a wiki-style documentation app with its own interface. Its content is generated from code changes with the help of AI agents, and each release expands it. Alongside that I build and fix React / Next.js screens, test the main journeys manually and with Playwright, and manage tickets in Jira.",
+      "longDescription": "Pelagos is a reinsurance company. On its policy administration platform I work as a React front-end developer with QA responsibilities. Early on I noticed that the project's documentation was a set of standalone SharePoint documents: hard to find, quickly stale and disconnected from the code, while the compliance department needed complete, current records. I designed and built a documentation app based on Karpathy's LLM Wiki pattern: code changes and releases are the raw sources, and AI agents maintain an interlinked wiki from them, with my review. It now covers 5 applications and 15 releases, and every application has dedicated pages for user documentation, technical documentation, release notes, test results and compliance documentation. Alongside that I build and fix React / Next.js screens, test the main journeys manually and with Playwright, and manage tickets in Jira.",
       "challenge": "Documentation for the platform existed only as standalone SharePoint files. Finding the right page was slow, content went stale with every release, and nothing connected the documents to what had actually shipped.",
-      "solution": "I designed and built an integrated, wiki-style documentation app with a clean interface for the team. Pages are generated from code changes with the help of AI agents, so each release adds its own documentation and release notes. As a developer with QA responsibilities, I also fix the front-end issues I find myself.",
-      "impact": "The team went from scattered files to a documentation app that stays current and grows with the product. It's easier and faster to use for me, for the team and for the client, and it raised project documentation to a professional standard.",
+      "solution": "I designed and built a documentation app on Karpathy's LLM Wiki pattern. Code changes and releases go in as sources, and AI agents keep an interlinked wiki current, so each release adds its own documentation, release notes and test results. As a developer with QA responsibilities, I also fix the front-end issues I find myself.",
+      "impact": "Documentation for 5 applications and 15 releases, each with user and technical docs, release notes, test results and compliance documents, in one place that stays current. It's easier and faster to use for me, the team, the client and the compliance department.",
       "technologies": [
         "React",
         "Next.js",
         "TypeScript",
         "AI agents",
+        "LLM Wiki (Karpathy pattern)",
         "Technical documentation",
         "Playwright",
         "Tailwind CSS",
@@ -296,18 +361,18 @@
         "Azure DevOps"
       ],
       "features": [
-        "Integrated documentation app built from scratch (wiki model)",
+        "Documentation app built from scratch on Karpathy's LLM Wiki pattern",
+        "5 applications and 15 releases covered",
+        "User docs, technical docs, release notes, test results and compliance pages",
         "Replaced standalone SharePoint documents",
-        "Docs generated from code changes with AI agents",
-        "Documentation that expands with every release",
         "React / Next.js screens and front-end fixes",
-        "Manual and Playwright testing",
-        "Jira ticket writing and triage"
+        "Manual and Playwright testing"
       ],
       "projectImage": "",
       "projectLogo": "",
       "isPersonal": false,
-      "showcaseOrder": 0
+      "showcaseOrder": 0,
+      "parallelNote": "In parallel with Proprio until Apr 2026"
     },
     {
       "id": "sofomo-website",
@@ -321,7 +386,7 @@
       "role": "Front-end Developer",
       "shortDescription": "My employer since 2022: a software consultancy that embeds developers in international client teams. Through Sofomo I delivered projects for IQAir, Octopus, Proprio, FlexCare and TriplePoint, and contributed to Sofomo's own website.",
       "highlights": [
-        "Embedded in client teams across e-commerce, healthcare, education and ERP, mostly for US and international clients.",
+        "Embedded in client teams across e-commerce, healthcare, education, ERP and insurance, often on two or three client projects in parallel.",
         "Picked up a new stack and codebase quickly on each engagement: React, Vue, Next.js, Remix, Shopify Hydrogen, NetSuite and Salesforce.",
         "Contributed to the company's Next.js corporate website with responsive, accessible components and SEO and performance work."
       ],
@@ -329,7 +394,17 @@
       "challenge": "Working as a consultancy developer means adapting quickly to different tech stacks, codebases and team dynamics while keeping delivery standards high on every client project.",
       "solution": "I kept consistent coding standards across projects and built hands-on expertise in multiple frameworks (React, Vue, Next.js, Remix) so I could contribute from the first weeks of each engagement.",
       "impact": "Delivered client projects across several industries (e-commerce, healthcare, education, ERP) while staying with the same employer long term.",
-      "technologies": ["Next.js", "React", "Vue.js", "TypeScript", "Remix", "Tailwind CSS", "CSS Modules", "SEO", "Performance optimization"],
+      "technologies": [
+        "Next.js",
+        "React",
+        "Vue.js",
+        "TypeScript",
+        "Remix",
+        "Tailwind CSS",
+        "CSS Modules",
+        "SEO",
+        "Performance optimization"
+      ],
       "features": [
         "Long-term consultancy employment",
         "Multiple client project assignments",
@@ -368,7 +443,17 @@
       "challenge": "The client wanted non-technical users to choose which features to test and run automated tests on demand, without a terminal, without developer knowledge and without waiting for QA.",
       "solution": "I wrote the complete Selenium test suite in its own repository, scheduled automatic periodic runs in Jenkins, and built a standalone Next.js / React app connected to the Jenkins API so users could switch features on or off, trigger runs and read the results.",
       "impact": "Testing became self-service. Non-technical users ran exactly what they needed and saw the results immediately, and the team stopped coordinating test runs by hand.",
-      "technologies": ["Selenium", "Java", "Jenkins", "Jenkins API", "Next.js", "React", "CI/CD", "Test automation", "Salesforce"],
+      "technologies": [
+        "Selenium",
+        "Java",
+        "Jenkins",
+        "Jenkins API",
+        "Next.js",
+        "React",
+        "CI/CD",
+        "Test automation",
+        "Salesforce"
+      ],
       "features": [
         "Complete Selenium test suite",
         "Independent test repository",
@@ -392,23 +477,33 @@
       "startDate": "2023-08",
       "endDate": "2024-06",
       "role": "Lead Front-end Developer",
-      "shortDescription": "Joined as a front-end developer to extend an existing Vue app for a US healthcare staffing company. I saw it had been built as a single page with no real routing, defined what had to change, and became the Lead Front-end Developer who set the team's SPA architecture.",
+      "shortDescription": "Joined a team of 6 as a front-end developer to extend an existing Vue app for a US healthcare staffing company. I saw it had been built as a single page with no real routing, defined what had to change, and became the Lead Front-end Developer who set the team's SPA architecture.",
       "impactStory": {
         "headline": "From a one-page Vue app to a proper SPA, and from developer to lead",
         "gap": "I joined to help extend an existing Vue app. It had been built as a single page with no real routing, nowhere near the single-page-application standard the product needed.",
         "action": "I mapped what had been built against what the product required, defined the changes, and set the standard for SPA structure, advanced routing and the front-end architecture as a whole.",
-        "result": "I became the team's Lead Front-end Developer, and the app got a scalable architecture the team could build on."
+        "result": "I became Lead Front-end Developer for the team of 6, and the app got a scalable architecture the team could build on."
       },
       "highlights": [
         "Identified that the existing Vue app was built as a single page without proper routing, and defined what had to change.",
-        "Became Lead Front-end Developer and set the team's standard for SPA structure, advanced routing and front-end architecture.",
+        "Became Lead Front-end Developer in a team of 6, and set the standard for SPA structure, advanced routing and front-end architecture.",
         "Delivered time-tracking and CRM workflow interfaces embedded in NetSuite for a US healthcare staffing company."
       ],
       "longDescription": "FlexCare is a US healthcare staffing company. I joined the team as a front-end developer to help develop an existing Vue application deployed inside NetSuite for time tracking and internal CRM workflows. When I compared what had been built with what the product needed, I saw the problem: the app was effectively one page, with no proper routing or structure, far from the single-page-application standard it needed. I identified what had to change, and I became the Lead Front-end Developer who set the SPA structure, the routing approach and the front-end architecture for the team.",
       "challenge": "The existing Vue app had been built as a single page without proper routing or structure. It could not support the features the product needed, and adding more on top would only have made it worse.",
       "solution": "I analysed the current app against the requirements, defined the target single-page-application structure with advanced routing, and led the team in moving to that architecture while delivering the time-tracking and CRM workflows.",
-      "impact": "The team got a scalable front-end architecture and clear standards to build on, and I stepped up from developer to Lead Front-end Developer.",
-      "technologies": ["Vue.js", "JavaScript", "SPA architecture", "Advanced routing", "Front-end architecture", "NetSuite", "CRM integration", "HTML", "CSS"],
+      "impact": "The team of 6 got a scalable front-end architecture and clear standards to build on, and I stepped up from developer to Lead Front-end Developer.",
+      "technologies": [
+        "Vue.js",
+        "JavaScript",
+        "SPA architecture",
+        "Advanced routing",
+        "Front-end architecture",
+        "NetSuite",
+        "CRM integration",
+        "HTML",
+        "CSS"
+      ],
       "features": [
         "Audit of the existing Vue app",
         "SPA structure and advanced routing",
@@ -520,7 +615,8 @@
       "projectImage": "/images/projects/IQAir_logo.svg.png",
       "projectLogo": "/images/projects/IQAir_logo.svg.png",
       "isPersonal": false,
-      "showcaseOrder": 4
+      "showcaseOrder": 4,
+      "parallelNote": "In parallel with Proprio"
     },
     {
       "id": "octopus-learning-platform",
@@ -542,7 +638,14 @@
       "challenge": "Deliver a consistent, responsive UI for a content-heavy learning platform as a side project, with limited time.",
       "solution": "Built the front end in Next.js and React with a reusable Tailwind-based component set and a clear code structure.",
       "impact": "A working, consistent front end for the platform, and more lead experience.",
-      "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS", "HTML", "Responsive design"],
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "HTML",
+        "Responsive design"
+      ],
       "features": [
         "Next.js and React front end",
         "Reusable Tailwind components",
@@ -552,7 +655,8 @@
       "projectImage": "/images/projects/octopus-logo.svg",
       "projectLogo": "/images/projects/octopus-logo.svg",
       "isPersonal": false,
-      "showcaseOrder": 5
+      "showcaseOrder": 5,
+      "parallelNote": "In parallel with Proprio"
     },
     {
       "id": "beautylash-website",
@@ -573,7 +677,14 @@
       "challenge": "Designing and implementing a complete commercial website independently while learning React and modern styling approaches.",
       "solution": "Built a React application using styled-components and SCSS, focusing on reusable components, consistent styling and a responsive layout tailored to the client's business needs.",
       "impact": "Delivered a fully functional commercial website for a real client, and gained hands-on experience with client communication and project ownership.",
-      "technologies": ["React", "JavaScript", "Styled Components", "SCSS", "CSS", "Responsive design"],
+      "technologies": [
+        "React",
+        "JavaScript",
+        "Styled Components",
+        "SCSS",
+        "CSS",
+        "Responsive design"
+      ],
       "features": [
         "Service and pricing sections",
         "Responsive layout",
@@ -604,7 +715,14 @@
       "challenge": "Creating a professional, trustworthy online presence for a technical service business while keeping performance high and the architecture clean.",
       "solution": "Implemented a Next.js application with TypeScript and CSS Modules, focusing on semantic structure, responsive design and SEO best practices. Deployed on Vercel for reliability and fast delivery.",
       "impact": "A production-ready website that supports the business's visibility and builds client trust.",
-      "technologies": ["Next.js", "React", "TypeScript", "CSS Modules", "Vercel", "SEO"],
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "CSS Modules",
+        "Vercel",
+        "SEO"
+      ],
       "features": [
         "SEO-friendly pages",
         "Responsive layout",
@@ -619,7 +737,7 @@
     }
   ],
   "about": {
-    "intro": "React front-end developer with 4+ years of commercial experience in React, Next.js, TypeScript and Vue, across headless Shopify e-commerce, NetSuite ERP extensions, healthcare CRM, an online learning platform and a reinsurance policy platform. Every project has needed something different, and I've made a habit of finding what's missing and building it. Before tech, I spent 12+ years managing teams in international hospitality.",
+    "intro": "React front-end developer with 5+ years building with React, Next.js, TypeScript and Vue, 4+ of them in commercial client teams, across headless Shopify e-commerce, NetSuite ERP extensions, healthcare CRM, an online learning platform and a reinsurance policy platform. Every project has needed something different, and I've made a habit of finding what's missing and building it. Before tech, I spent 12+ years managing teams in international hospitality.",
     "previousCareer": {
       "title": "12+ Years in Hospitality Management",
       "description": "Before moving into tech, I built a career in the hotel industry spanning over 12 years. I held senior management positions where I led teams, ran operations and delivered excellent guest experiences at international properties.",

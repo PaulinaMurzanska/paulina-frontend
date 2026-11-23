@@ -77,6 +77,7 @@ function ExperienceItem({ item, index }: { item: ProjectItem; index: number }) {
               </span>
               <span className="text-[var(--text-muted)]"> · {item.project}</span>
             </p>
+            {item.parallelNote && <p className="mt-1 text-sm text-[var(--text-muted)] italic">{item.parallelNote}</p>}
           </div>
           <div className="flex flex-wrap items-center gap-2 md:justify-end md:flex-shrink-0">
             {isCurrent && (

@@ -13,7 +13,7 @@ const strengths = [
   },
   {
     title: "I find the gap and fill it",
-    description: "Documentation scattered across SharePoint became an integrated docs app. A one-page Vue app became a proper SPA.",
+    description: "Documentation scattered across SharePoint became a docs app for 5 applications and 15 releases. A one-page Vue app became a proper SPA.",
   },
   {
     title: "I know when AI is wrong",

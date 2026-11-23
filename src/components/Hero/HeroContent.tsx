@@ -57,8 +57,8 @@ export function HeroContent() {
         {...fadeInUp}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
-        {years}+ years building with <strong className="text-[var(--text-primary)]">React, Next.js, TypeScript and Vue</strong>{" "}
-        for e-commerce, ERP, healthcare, education and insurance. Every project needs something different. I adapt fast,
+        {profile.buildingExperience} years building with <strong className="text-[var(--text-primary)]">React, Next.js, TypeScript and Vue</strong>,{" "}
+        {years}+ of them in commercial client teams, for e-commerce, ERP, healthcare, education and insurance. Every project needs something different. I adapt fast,
         find what&apos;s missing, whether that&apos;s <strong className="text-[var(--text-primary)]">architecture, documentation or tooling</strong>,
         and build it. I work with <strong className="text-[var(--text-primary)]">AI agents</strong> from Jira ticket to release,
         and I review every line they write.

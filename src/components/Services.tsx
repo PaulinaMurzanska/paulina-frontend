@@ -9,7 +9,10 @@ const { profile, services, experienceTimeline } = data;
 
 export function Services() {
   const stats = [
-    { value: `${getYearsOfExperience(profile.careerStart)}+`, label: "years of commercial front-end experience" },
+    {
+      value: profile.buildingExperience,
+      label: `years building with React, ${getYearsOfExperience(profile.careerStart)}+ in commercial teams`,
+    },
     { value: `${experienceTimeline.length}`, label: "products and client projects delivered" },
     { value: "2×", label: "Lead Front-end Developer roles" },
     { value: "12+", label: "years of team leadership before tech" },
